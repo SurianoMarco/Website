@@ -95,7 +95,8 @@ body {
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 4vh;
+    font-size: 2.9vh;
+    white-space: nowrap;
     font-family: sans-serif;
     animation: 4s ease 0s normal forwards 1 fadein;
 }
@@ -129,6 +130,7 @@ body {
     position: absolute;
     bottom: 50px;
     left: 50%;
+    right: 50%;
     width: 30px;
     height: 50px;
     margin-left: -15px;
@@ -140,6 +142,7 @@ body {
     position: absolute;
     top: 10px;
     left: 50%;
+    right: 50%;
     content: '';
     width: 6px;
     height: 6px;
