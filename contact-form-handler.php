@@ -1,22 +1,21 @@
 <?php
-// definisco mittente e destinatario della mail
-$nome_mittente = "Mio Nome";
-$mail_mittente = "mittente@sito.com";
-$mail_destinatario = "info@marcosuriano.com";
+$name = $_Post['name'];
+$visor_email = $_Post['email'];
+$message = $_Post['message'];
 
-// definisco il subject ed il body della mail
-$mail_oggetto = "Messaggio di prova";
-$mail_corpo = "Questo è un messaggio di prova per testare la mia applicazione";
+$email_from = 'info@marcosuriano.com';
+$email_subject = "Nuovo Contatto dal Sito";
 
-// aggiusto un po' le intestazioni della mail
-// E' in questa sezione che deve essere definito il mittente (From)
-// ed altri eventuali valori come Cc, Bcc, ReplyTo e X-Mailer
-$mail_headers = "From: " .  $nome_mittente . " <" .  $mail_mittente . ">\r\n";
-$mail_headers .= "Reply-To: " .  $mail_mittente . "\r\n";
-$mail_headers .= "X-Mailer: PHP/" . phpversion();
+$email_body ="User Name: $name.\n". 
+            "User Email: $visitor_email.\n". 
+            "User Message: $message.\n";
+            
+    $to = "info@marcosuriano.com";
 
-if (mail($mail_destinatario, $mail_oggetto, $mail_corpo, $mail_headers))
-  echo "Messaggio inviato con successo a " . $mail_destinatario;
-else
-  echo "Errore. Nessun messaggio inviato.";
+    $headers ="From: $email_form \r\n";
+    $headers .= "Reply-To: $visitor_email \r\n";
+
+    mail($to, $email_subject, $email_body,$headers);
+    header("Location: index.html")
+
 ?>
