@@ -33,6 +33,7 @@ $('.count').each(function () {
 
 
 
+
 /* PRINT LETTERS LENGTH
 const logo = document.querySelectorAll("#logo path");
 

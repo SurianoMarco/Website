@@ -1,43 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-      // Add smooth scrolling to all links
-      $("a").on('click', function(event) {
-    
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== "") {
-          // Prevent default anchor click behavior
-          event.preventDefault();
-    
-          // Store hash
-          var hash = this.hash;
-    
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          $('html, body').animate({
-            scrollTop: $(hash).offset().top
-          }, 800, function(){
-       
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-          });
-        } // End if
-      });
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
+
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
     });
-    </script>
-    <style>
-    #section1 {
-      height: 600px;
-      background-color: pink;
-    }
-    
-    #section2 {
-      height: 600px;
-      background-color: yellow;
-    }
+</script>
+<style>
+
 </style>
 
 <head>
@@ -45,53 +37,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
-    
+
 </head>
 
 <body>
+
     <script src="app.js"></script>
 
     <div class="containertext">
-    <div class="name">
+        <div class="name">
 
-        <!--SVG NAME-->
-        <svg id="logo" width="810" height="71" viewBox="0 0 810 71" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-                d="M1.62399 69H15.064V25.416L33.112 69H43.288L61.24 25.416V69H74.68V1.992H59.512L38.2 51.816L16.888 1.992H1.62399V69Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M133.472 69H147.68L123.584 1.896H107.936L83.8397 69H97.9517L102.368 56.232H129.056L133.472 69ZM125.408 45.48H106.016L115.712 17.448L125.408 45.48Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M192.206 22.824C192.206 28.872 188.846 32.808 181.358 32.808H170.126V13.128H181.358C188.846 13.128 192.206 16.872 192.206 22.824ZM156.686 1.992V69H170.126V42.888H176.462L191.246 69H206.798L190.767 41.832C201.519 38.952 206.03 30.696 206.03 22.536C206.03 11.304 197.966 1.992 181.839 1.992H156.686Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M214.922 35.4C214.922 55.464 229.61 69.576 248.906 69.576C263.786 69.576 275.883 61.704 280.395 47.88H264.939C261.771 54.408 256.01 57.576 248.81 57.576C237.098 57.576 228.746 48.936 228.746 35.4C228.746 21.768 237.098 13.224 248.81 13.224C256.01 13.224 261.771 16.392 264.939 22.824H280.395C275.883 9.096 263.786 1.128 248.906 1.128C229.61 1.128 214.922 15.336 214.922 35.4Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M357.25 35.304C357.25 15.24 342.082 1.032 322.978 1.032C304.066 1.032 288.61 15.24 288.61 35.304C288.61 55.464 304.066 69.672 322.978 69.672C341.986 69.672 357.25 55.464 357.25 35.304ZM302.434 35.304C302.434 21.672 310.786 13.128 322.978 13.128C335.074 13.128 343.426 21.672 343.426 35.304C343.426 48.936 335.074 57.672 322.978 57.672C310.786 57.672 302.434 48.936 302.434 35.304Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M436.972 49.608C436.972 25.992 402.604 33.48 402.604 20.04C402.604 14.568 406.54 11.976 411.82 12.168C417.58 12.264 421.132 15.72 421.42 20.136H436.204C435.34 8.04 425.932 1.032 412.204 1.032C398.38 1.032 388.588 8.328 388.588 20.424C388.492 44.712 423.052 35.976 423.052 50.472C423.052 55.272 419.308 58.632 412.972 58.632C406.732 58.632 403.18 55.08 402.796 49.704H388.396C388.588 62.376 399.34 69.672 413.26 69.672C428.524 69.672 436.972 60.168 436.972 49.608Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M448.432 43.368C448.432 61.032 460.528 69.672 475.216 69.672C489.904 69.672 502.576 61.032 502.576 43.368V1.992H489.04V43.464C489.04 52.68 484.048 57.48 475.408 57.48C466.864 57.48 461.872 52.68 461.872 43.464V1.992H448.432V43.368Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M551.081 22.824C551.081 28.872 547.721 32.808 540.233 32.808H529.001V13.128H540.233C547.721 13.128 551.081 16.872 551.081 22.824ZM515.561 1.992V69H529.001V42.888H535.337L550.121 69H565.673L549.641 41.832C560.393 38.952 564.905 30.696 564.905 22.536C564.905 11.304 556.841 1.992 540.713 1.992H515.561Z"
-                stroke="white" stroke-width="2" />
-            <path d="M577.061 69H590.501V1.992H577.061V69Z" stroke="white" stroke-width="2" />
-            <path
-                d="M649.284 69H663.492L639.396 1.896H623.748L599.652 69H613.764L618.18 56.232H644.868L649.284 69ZM641.22 45.48H621.828L631.524 17.448L641.22 45.48Z"
-                stroke="white" stroke-width="2" />
-            <path d="M716.371 1.896V47.976L685.939 1.896H672.499V69H685.939V23.016L716.371 69H729.811V1.896H716.371Z"
-                stroke="white" stroke-width="2" />
-            <path
-                d="M808.469 35.304C808.469 15.24 793.301 1.032 774.197 1.032C755.285 1.032 739.829 15.24 739.829 35.304C739.829 55.464 755.285 69.672 774.197 69.672C793.205 69.672 808.469 55.464 808.469 35.304ZM753.653 35.304C753.653 21.672 762.005 13.128 774.197 13.128C786.293 13.128 794.645 21.672 794.645 35.304C794.645 48.936 786.293 57.672 774.197 57.672C762.005 57.672 753.653 48.936 753.653 35.304Z"
-                stroke="white" stroke-width="2" />
-        </svg>
+            <!--SVG NAME-->
+            <svg id="logo" width="810" height="71" viewBox="0 0 810 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M1.62399 69H15.064V25.416L33.112 69H43.288L61.24 25.416V69H74.68V1.992H59.512L38.2 51.816L16.888 1.992H1.62399V69Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M133.472 69H147.68L123.584 1.896H107.936L83.8397 69H97.9517L102.368 56.232H129.056L133.472 69ZM125.408 45.48H106.016L115.712 17.448L125.408 45.48Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M192.206 22.824C192.206 28.872 188.846 32.808 181.358 32.808H170.126V13.128H181.358C188.846 13.128 192.206 16.872 192.206 22.824ZM156.686 1.992V69H170.126V42.888H176.462L191.246 69H206.798L190.767 41.832C201.519 38.952 206.03 30.696 206.03 22.536C206.03 11.304 197.966 1.992 181.839 1.992H156.686Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M214.922 35.4C214.922 55.464 229.61 69.576 248.906 69.576C263.786 69.576 275.883 61.704 280.395 47.88H264.939C261.771 54.408 256.01 57.576 248.81 57.576C237.098 57.576 228.746 48.936 228.746 35.4C228.746 21.768 237.098 13.224 248.81 13.224C256.01 13.224 261.771 16.392 264.939 22.824H280.395C275.883 9.096 263.786 1.128 248.906 1.128C229.61 1.128 214.922 15.336 214.922 35.4Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M357.25 35.304C357.25 15.24 342.082 1.032 322.978 1.032C304.066 1.032 288.61 15.24 288.61 35.304C288.61 55.464 304.066 69.672 322.978 69.672C341.986 69.672 357.25 55.464 357.25 35.304ZM302.434 35.304C302.434 21.672 310.786 13.128 322.978 13.128C335.074 13.128 343.426 21.672 343.426 35.304C343.426 48.936 335.074 57.672 322.978 57.672C310.786 57.672 302.434 48.936 302.434 35.304Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M436.972 49.608C436.972 25.992 402.604 33.48 402.604 20.04C402.604 14.568 406.54 11.976 411.82 12.168C417.58 12.264 421.132 15.72 421.42 20.136H436.204C435.34 8.04 425.932 1.032 412.204 1.032C398.38 1.032 388.588 8.328 388.588 20.424C388.492 44.712 423.052 35.976 423.052 50.472C423.052 55.272 419.308 58.632 412.972 58.632C406.732 58.632 403.18 55.08 402.796 49.704H388.396C388.588 62.376 399.34 69.672 413.26 69.672C428.524 69.672 436.972 60.168 436.972 49.608Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M448.432 43.368C448.432 61.032 460.528 69.672 475.216 69.672C489.904 69.672 502.576 61.032 502.576 43.368V1.992H489.04V43.464C489.04 52.68 484.048 57.48 475.408 57.48C466.864 57.48 461.872 52.68 461.872 43.464V1.992H448.432V43.368Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M551.081 22.824C551.081 28.872 547.721 32.808 540.233 32.808H529.001V13.128H540.233C547.721 13.128 551.081 16.872 551.081 22.824ZM515.561 1.992V69H529.001V42.888H535.337L550.121 69H565.673L549.641 41.832C560.393 38.952 564.905 30.696 564.905 22.536C564.905 11.304 556.841 1.992 540.713 1.992H515.561Z"
+                    stroke="white" stroke-width="2" />
+                <path d="M577.061 69H590.501V1.992H577.061V69Z" stroke="white" stroke-width="2" />
+                <path
+                    d="M649.284 69H663.492L639.396 1.896H623.748L599.652 69H613.764L618.18 56.232H644.868L649.284 69ZM641.22 45.48H621.828L631.524 17.448L641.22 45.48Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M716.371 1.896V47.976L685.939 1.896H672.499V69H685.939V23.016L716.371 69H729.811V1.896H716.371Z"
+                    stroke="white" stroke-width="2" />
+                <path
+                    d="M808.469 35.304C808.469 15.24 793.301 1.032 774.197 1.032C755.285 1.032 739.829 15.24 739.829 35.304C739.829 55.464 755.285 69.672 774.197 69.672C793.205 69.672 808.469 55.464 808.469 35.304ZM753.653 35.304C753.653 21.672 762.005 13.128 774.197 13.128C786.293 13.128 794.645 21.672 794.645 35.304C794.645 48.936 786.293 57.672 774.197 57.672C762.005 57.672 753.653 48.936 753.653 35.304Z"
+                    stroke="white" stroke-width="2" />
+            </svg>
 
-    </div>
+        </div>
 
 
         <script src="app.js"></script>
@@ -99,7 +93,7 @@
 
     </div>
 
-    <div class ="bottom-text">
+    <div class="bottom-text">
         <p>Designer and Developer</p>
     </div>
 
@@ -112,85 +106,92 @@
 
 
 
-<section id="section01">
-    <div class = "container about" id = "about">
-        <h1>About</h1>
-        <div class = "about-me-info">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+    <section id="section01">
+        <div class="container about" id="about">
+            <h1>About</h1>
+            <div class="about-me-info">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et
+                    dolore magna aliqua.</p>
 
-        <div class ="Graph">
-          <div class="holder">
-              <div class="bar cf" data-percent="85%">
-                  <span class="label">Photoshop</span>
-                </div>
-                <div class="bar cf" data-percent="75%">
-                    <span class="label light">Illustrator</span>
-                </div>
-                <div class="bar cf" data-percent="65%">
-                    <span class="label">Indesign</span>
-                </div>
-                    <div class="bar cf" data-percent="90%">
-                        <span class="label light">Swift</span>
-                    </div>
-                    <div class="bar cf" data-percent="90%">
-                        <span class="label">Java</span>
-                    </div>
-                    <div class="bar cf" data-percent="80%">
-                        <span class="label light">Html</span>
-                    </div>
-                    <div class="bar cf" data-percent="85%">
-                        <span class="label light">Css</span>
-                    </div>
+                <div class="Graph">
+                    <div class="holder">
+                        <div class="bar cf" data-percent="85%">
+                            <span class="label">Photoshop</span>
                         </div>
+                        <div class="bar cf" data-percent="75%">
+                            <span class="label light">Illustrator</span>
+                        </div>
+                        <div class="bar cf" data-percent="65%">
+                            <span class="label">Indesign</span>
+                        </div>
+                        <div class="bar cf" data-percent="90%">
+                            <span class="label light">Swift</span>
+                        </div>
+                        <div class="bar cf" data-percent="90%">
+                            <span class="label">Java</span>
+                        </div>
+                        <div class="bar cf" data-percent="80%">
+                            <span class="label light">Html</span>
+                        </div>
+                        <div class="bar cf" data-percent="85%">
+                            <span class="label light">Css</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <a href="Volume1-3461.pdf" target="_blank" class="cert-button">See Certifications</a>
+                </div>
+            </div>
+            <img src="img/dotted-shape.png" alt="">
         </div>
-        <div class="middle">
-            <a href="Volume1-3461.pdf" target="_blank" class="cert-button">See Certifications</a>
+
+
+    </section>
+
+
+
+    <section id="divisore">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+
+    <section id="section02">
+        <div class="container contact" id="contact">
+            <div class="contact-title">
+                <h1>Contact</h1>
+            </div>
+            <div class="contact-me-info">
+
+                <div class="contact-form">
+                    <form id="contact-form" method="post" action="contact-form-handler.php">
+                        <input name="name" type="text" class="form-control" placeholder="Name" required> <br>
+                        <input name="email" type="email" class="form-control" placeholder="Email" required> <br>
+                        <textarea name="message" class="form-control" placeholder="Message" rows="4"
+                            required></textarea> <br>
+
+                        <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                    </form>
+                </div>
+            </div>
+            <img src="img/dotted-shape.png" alt="">
         </div>
-        </div>
-        <img src="img/dotted-shape.png" alt="">
-      </div>
+    </section>
 
 
-</section>
-
-
-
-<section id="divisore">
-<br>
-<br>
-<br>
-</section>
-
-
-<section id="section02">
-    <div class = "container about" id = "about">
-        <div class = "contact-title">
-            <h1>Contact</h1>
-        </div>
-    <div class="about-me-info">
-
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="contact-form-handler.php">
-                <input name="name" type="text" class="form-control" placeholder="Name" required> <br>
-                <input name="email" type="email" class="form-control" placeholder="Email" required> <br>
-                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea> <br>
-           
-           <input type="submit" class="form-control submit" value="SEND MESSAGE"> 
-            </form>
-        </div>
-    </div>
-        <img src="img/dotted-shape.png" alt="">
-      </div>
-</section>
-
-
-
-
- 
 
 
 
