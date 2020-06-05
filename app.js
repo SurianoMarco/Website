@@ -1,9 +1,5 @@
 
 
-
-
-
-
   
   setTimeout(function start (){
   

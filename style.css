@@ -1,16 +1,15 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-body {
-    width: auto;
-    height: 300vh;
-    background-color: #1E1D1D;
-}
-.name{
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300,900);
 
+*, *:before, *:after{
+  box-sizing: border-box;
+  font: 300 1em/1.5 'Merriweather';
+  padding: 0; margin: 0;
+}
+
+html, body{
+    background:#1E1D1D;}
+
+.name{
     width: 100%;
     height: 100vh;
     position: relative;
@@ -183,7 +182,8 @@ body {
 
 .about h1,
 .work h1 {
-	font-size: 20vh;
+    font-size: 20vh;
+    font-family: sans-serif;
 	z-index: 0;
 	opacity: .1; 
 }
@@ -194,15 +194,14 @@ body {
 	box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
     padding: 50px;
 	position: relative;
-	top: -70px;
+	top: -100px;
 	left: 50%;
-	right: 50%;
 	transform: translate(-50%);
     z-index: 1;
 }
 
 .about-me-info p {
-	font-size: 1.3rem;
+    font-size: 1.3hw;
 	color: #BEBEBE;
 }
 
@@ -212,7 +211,7 @@ body {
 }
 
 .about img {
-	width: 300px;
+	width: 40vh;
 	position: relative;
 	top: -300px;
 	left: calc(100% - 100px);
@@ -243,23 +242,24 @@ body {
  
           font-size: .60em;
           padding: 1em;
-          background: dark;
+          background: #1E1D1D;
           width: 8em;
           display: inline-block;
           position: relative;
           z-index: 2;
           font-weight: bold;
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-family: sans-serif;
   }
+
 
    .count {
       position: absolute;
       right: .25em;
       top: .75em;
-       padding: .15em; 
+        padding: .15em; 
       font-size: .75em;
       font-weight: bold;
-      font-family: fontSans;
+      font-family: sans-serif;
    }
 
   
@@ -357,9 +357,11 @@ margin-top: 40px;
 
 
 .contact h1 {
-	font-size: 20vh;
+    font-size: 20vh;
+    font-family: sans-serif;
     z-index: 0;
-    transform: translate(55%);
+    position: relative;
+    padding-left: 50%;
 	opacity: .1; 
 }
 
@@ -380,17 +382,35 @@ margin-top: 40px;
 	font-size: 1.3rem;
 	color: #BEBEBE;
 }
+.button-form{
+text-align: center;
 
-.contact-me-info p:nth-child(2),
-.contact-me-info p:last-child{
-	margin-top: 30px;
 }
 
+
 .contact img {
-	width: 300px;
+	width: 40vh;
 	position: relative;
 	top: -300px;
 	left: 8%;
 	
 }
+.fixed_footer{
+    width: 100%;
+    height: 150px;
+    background: #111;
+    position: fixed; left: 0; bottom: 0;
+    z-index: -100;
+  }
+     .fixed_footer p{
+      color: #696969;
+      font-size: 1em;
+      font-weight: 300;
+    }
 
+    .content{
+        text-align: center;
+        margin: auto;
+        margin-bottom: 150px; /* Same height as footer */
+        padding: 38px;
+      }
