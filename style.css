@@ -91,7 +91,7 @@ html, body{
 .bottom-text{
     color: dimgrey;
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 2.7vh;
@@ -303,8 +303,8 @@ form .submit:hover{
 
 .middle{
 position: relative;
-margin-left: 35%;
-margin-right: 35%;
+margin-left: 30%;
+margin-right: 30%;
 margin-top: 40px;
 }
 
@@ -314,7 +314,7 @@ margin-top: 40px;
     color: white;
     white-space: nowrap;
     font-family: sans-serif;
-    font-size: 1.5vh;
+    text-size-adjust: 20%;
     text-decoration: none;
     border: 2px solid #ff7675;
     padding: 14px;
@@ -364,7 +364,7 @@ margin-top: 40px;
 }
 
 .contact-me-info {
-max-width: 900px;
+    max-width: 900px;
 	background-color: #252627;
 	box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
     padding: 50px;
