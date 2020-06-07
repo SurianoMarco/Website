@@ -1,21 +1,11 @@
-<?php
-$name = $_Post['name'];
-$visor_email = $_Post['email'];
-$message = $_Post['message'];
-
-$email_from = 'info@marcosuriano.com';
-$email_subject = "Nuovo Contatto dal Sito";
-
-$email_body ="User Name: $name.\n". 
-            "User Email: $visitor_email.\n". 
-            "User Message: $message.\n";
-            
-    $to = "info@marcosuriano.com";
-
-    $headers ="From: $email_form \r\n";
-    $headers .= "Reply-To: $visitor_email \r\n";
-
-    mail($to, $email_subject, $email_body,$headers);
-    header("Location: index.html")
-
+<?php 
+$name = $_POST['name'];
+$email = $_POST['email'];
+$message = $_POST['message'];
+$formcontent="From: $name \n Message: $message";
+$recipient = "ilsurio@hotmail.it";
+$subject = "Contact Form";
+$mailheader = "From: $email \r\n";
+mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
+echo "Thank You!";
 ?>

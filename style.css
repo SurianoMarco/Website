@@ -9,15 +9,15 @@
 html, body{
     background:#1E1D1D;}
 
-.name{
+.name {
     width: 100%;
     height: 100vh;
     position: relative;
-} 
-
+}
 
 #logo {
-    position: relative;
+    position: absolute;
+    width: 50%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -94,7 +94,7 @@ html, body{
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 2.9vh;
+    font-size: 2.7vh;
     white-space: nowrap;
     font-family: sans-serif;
     animation: 4s ease 0s normal forwards 1 fadein;
@@ -182,7 +182,7 @@ html, body{
 
 .about h1,
 .work h1 {
-    font-size: 20vh;
+    font-size: 10vw;
     font-family: sans-serif;
 	z-index: 0;
 	opacity: .1; 
@@ -355,24 +355,24 @@ margin-top: 40px;
 
 
 .contact h1 {
-    font-size: 20vh;
+    font-size: 10vw;
     font-family: sans-serif;
     position: relative;
     padding-left: 50%;
+    border-right: 20px;
 	opacity: .1; 
 }
 
 .contact-me-info {
-	max-width: 900px;
+max-width: 900px;
 	background-color: #252627;
 	box-shadow: 0 0 1.2rem rgba(0,0,0,.25);
-	padding: 50px;
+    padding: 50px;
 	position: relative;
-	top: -90px;
+	top: -100px;
 	left: 50%;
-	right: 50%;
 	transform: translate(-50%);
-	z-index: 1;
+    z-index: 1;
 }
 
 .contact-me-info p {
