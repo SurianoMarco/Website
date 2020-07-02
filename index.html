@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     
-
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -176,13 +176,16 @@
             </div>
             <div class="contact-me-info">
                 <div class="contact-form">
-                    <form id="contact-form" method="POST" action="contact-form-handler.php">
-                        <input name="name" type="text" class="form-control" placeholder="Name" required> <br>
-                        <input name="email" type="email" class="form-control" placeholder="Email" required> <br>
-                        <textarea name="message" class="form-control" placeholder="Message" rows="4"
+            
+                    <form action="https://formspree.io/info@marcosuriano.com" method="POST">
+                        <input name="name" type="text" class="subject" placeholder="Name" required> <br>
+                        <input name="email" type="email" class="email" placeholder="Email" required> <br>
+                        <textarea name="message" class="message" placeholder="Message" rows="4"
                             required></textarea> <br>
                         <div class="button-form">
-                        <input type="submit" class="form-control submit" value="Send Message">
+                        <input type="submit" class="submit" value="Send Message">
+                        </div>
+                        <div class = "status">
                         </div>
                     </form>
                 </div>
