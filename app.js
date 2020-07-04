@@ -16,7 +16,7 @@ if (email.length > 5 && email.includes('@')&& email.includes('.')) {
   statusElm.append('<div>Email is not valid</div>')
 }
 
-if (name.length > 2){
+if (name.length >= 2){
   statusElm.append('<div>Name is valid</div>')
 
 } else {
@@ -24,7 +24,7 @@ if (name.length > 2){
   statusElm.append('<div>Name is not valid</div>')
 }
 
-if (message.length > 20){
+if (message.length >= 5){
   statusElm.append('<div>Message is valid</div>')
 } else {
   event.preventDefault()

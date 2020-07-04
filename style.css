@@ -200,10 +200,16 @@ html, body{
     z-index: 1;
 }
 
-.about-me-info p {
-    font-size: 1.3hw;
+.about-me-info p, .container-title p {
+    font-size: 1.2rem;
 	color: #BEBEBE;
 }
+
+.contact-me-info p {
+	font-size: 1.2rem;
+	color: #BEBEBE;
+}
+
 
 .about-me-info p:nth-child(2),
 .about-me-info p:last-child{
@@ -309,7 +315,8 @@ background: #BEBEBE;
 border-color: transparent;
 color: black;
 font-size: 20px;
-font-weight: bold;
+font-family: sans-serif;
+font-weight: bolder;
 letter-spacing: 2px;
 height: 50px;
 margin-top: 50px;    
@@ -395,10 +402,8 @@ margin-top: 40px;
     z-index: 1;
 }
 
-.contact-me-info p {
-	font-size: 1.3rem;
-	color: #BEBEBE;
-}
+
+
 
 .button-form{
 text-align: center;
